@@ -22,9 +22,10 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>Philippine Government Officials Database</h1>
+    <h1>Philippine Government Officials Database V2</h1>
     <table id="lgulist" class="display" style="width:100%">
       <thead>
         <tr>
@@ -37,36 +38,54 @@
           <th>Contact</th>
         </tr>
       </thead>
+      <tfoot>
+        <tr>
+          <th>Region</th>
+          <th>Province</th>
+          <th>City/Municipality</th>
+          <th>Barangay</th>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Contact</th>
+        </tr>
+      </tfoot>
     </table>
   </div>
 
   <script>
     $(document).ready(function() {
-      $.getJSON('lgu.json', function(data) {
-        $('#lgulist').DataTable({
-          "data": data,
-          "columns": [
-            { "data": "region" },
-            { "data": "province" },
-            { "data": "citymun" },
-            { "data": "barangay" },
-            { "data": "position" },
-            { "data": "name" },
-            { "data": "contact" }
-          ],
-          "initComplete": function() {
-            this.api().columns().every(function() {
-              var that = this;
-              $('input', this.header()).on('keyup change clear', function() {
-                if (that.search() !== this.value) {
-                  that
-                    .search(this.value)
-                    .draw();
-                }
-              });
+      var table = $('#lgulist').DataTable({
+        "ajax": "lgu.json",
+        "columns": [
+          { "data": "region" },
+          { "data": "province" },
+          { "data": "citymun" },
+          { "data": "barangay" },
+          { "data": "position" },
+          { "data": "name" },
+          { "data": "contact" }
+        ],
+        initComplete: function () {
+          this.api().columns().every(function () {
+            var column = this;
+            var select = $('<select><option value=""></option></select>')
+                .appendTo($(column.footer()).empty())
+                .on('change', function () {
+                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
+ 
+                    column.search(val ? '^' + val + '$' : '', true, false).draw();
+                });
+ 
+            column.data().unique().sort().each(function (d, j) {
+                select.append('<option value="' + d + '">' + d + '</option>');
             });
-          }
-        });
+          });
+        }
+      });
+      table.columns(9).visible(false); // Hide the location column
+      $('#lgulist_filter').prepend('<label>Location: <input type="search" id="location-search"></label>'); // Add search input for location column
+      $('#location-search').on('keyup change', function() { // Filter the table by location column
+        table.column(9).search($(this).val()).draw();
       });
     });
   </script>
