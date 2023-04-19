@@ -4,70 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Philippine Government Officials Database</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
     }
 
-    #header {
-      background-color: #f2f2f2;
-      padding: 30px;
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
     }
 
-    #lgulist {
-      margin: 30px;
+    h1 {
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div id="header">
-    Philippine Government Officials Database
+  <div class="container">
+    <h1>Philippine Government Officials Database</h1>
+    <table id="lgulist" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Province</th>
+          <th>City/Municipality</th>
+          <th>Barangay</th>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+    </table>
   </div>
 
-  <table id="lgulist" class="display">
-    <thead>
-      <tr>
-        <th>Region</th>
-        <th>Province</th>
-        <th>City/Municipality</th>
-        <th>Barangay</th>
-        <th>Position</th>
-        <th>Name</th>
-        <th>Contact</th>
-      </tr>
-    </thead>
-  </table>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script>
     $(document).ready(function() {
-      var table = $('#lgulist').DataTable({
-        "ajax": {
-          "url": "lgu_list.txt",
-          "dataSrc": ""
-        },
-        "columns": [
-          { "data": "Region" },
-          { "data": "Province" },
-          { "data": "City/Municipality" },
-          { "data": "Barangay" },
-          { "data": "Position" },
-          { "data": "Name" },
-          { "data": "Contact" }
-        ]
+      $.getJSON('lgu.json', function(data) {
+        $('#lgulist').DataTable({
+          "data": data,
+          "columns": [
+            { "data": "region" },
+            { "data": "province" },
+            { "data": "citymun" },
+            { "data": "barangay" },
+            { "data": "position" },
+            { "data": "name" },
+            { "data": "contact" }
+          ]
+        });
       });
-      
-      // check if DataTable is already initialized before initializing it again
-      if (!$.fn.DataTable.isDataTable('#lgulist')) {
-        table = $('#lgulist').DataTable();
-      }
     });
   </script>
 </body>
