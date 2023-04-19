@@ -26,7 +26,7 @@
 
 <body>
   <div class="container">
-    <h1>Philippine Government Officials Database</h1>
+    <h1>Philippine Government Officials Database V2</h1>
     <table id="lgulist" class="display" style="width:100%">
       <thead>
         <tr>
@@ -44,26 +44,44 @@
 
   <script>
     $(document).ready(function() {
-      $.getJSON('lgu.json', function(data) {
-        $('#lgulist').DataTable({
-          "data": data,
-          "columns": [
-            { "data": "region" },
-            { "data": "province" },
-            { "data": "citymun" },
-            { "data": "barangay" },
-            { "data": "position" },
-            { "data": "name" },
-            { "data": "contact" },
-            { "data": "base_loc" },
-            { "data": "location" }
-          ]
-        });
+      var table = $('#lgulist').DataTable({
+        "ajax": "lgu.json",
+        "columns": [
+          { "data": "region" },
+          { "data": "province" },
+          { "data": "citymun" },
+          { "data": "barangay" },
+          { "data": "position" },
+          { "data": "name" },
+          { "data": "contact" }
+        ],
+        initComplete: function () {
+          this.api()
+            .columns()
+            .every(function () {
+              var column = this;
+              if (column.index() === 6) { //only add filter for Contact column
+                var select = $('<select><option value=""></option></select>')
+                  .appendTo($(column.header()))
+                  .on('change', function () {
+                    var val = $.fn.dataTable.util.escapeRegex(
+                      $(this).val()
+                    );
+                    column.search(val ? '^' + val + '$' : '', true, false).draw();
+                  });
+
+                column
+                  .data()
+                  .unique()
+                  .sort()
+                  .each(function (d, j) {
+                    select.append('<option value="' + d + '">' + d + '</option>');
+                  });
+              }
+            });
+        }
       });
     });
-
-    
-    
   </script>
 </body>
 
