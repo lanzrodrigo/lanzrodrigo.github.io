@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <meta charset="UTF-8">
+    <title>LGU List</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 </head>
-      
 <body>
-	<h1>LGU List</h1>
-	<table id="lgulist" class="display">
-		<thead>
-			<tr>
-				<th>Region</th>
+    <table id="lgulist" class="display">
+        <thead>
+            <tr>
+                <th>Region</th>
                 <th>Province</th>
-				<th>City/Municipality</th>
-				<th>Barangay</th>
+                <th>City/Municipality</th>
+                <th>Barangay</th>
                 <th>Position</th>
                 <th>Name</th>
                 <th>Contact</th>
-			</tr>
-		</thead>
-		<tbody>
-		</tbody>
-	</table>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#lgulist').DataTable({
-				"ajax": "lgu_list.csv",
-				"columns": [
-					{"data": "region"},
-					{"data": "province"},
-					{"data": "citymun"},
-                    {"data": "barangay"},
-                    {"data": "position"},
-                    {"data": "name"},
-                    {"data": "contact"}
-				]
-			});
-		});
-	</script>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "lgu_list.csv",
+                dataType: "text",
+                success: function(data) {
+                    var lgulist = data.split(/\r?\n|\r/);
+                    var tableData = [];
+
+                    for (var i = 0; i < lgulist.length; i++) {
+                        var rowData = lgulist[i].split(",");
+                        tableData.push(rowData);
+                    }
+
+                    $('#lgulist').DataTable({
+                        data: tableData,
+                        columns: [
+                            { title: "Region" },
+                            { title: "Province" },
+                            { title: "City/Municipality" },
+                            { title: "Barangay" },
+                            { title: "Position" },
+                            { title: "Name" },
+                            { title: "Contact" }
+                        ]
+                    });
+                },
+                error: function(xhr, error, thrown) {
+                    console.log("Error: " + xhr.responseText);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
