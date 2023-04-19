@@ -20,13 +20,18 @@
       font-family: 'Open Sans', sans-serif;
     }
 
+    div.container {
+      /* width: 70%; */
+      margin: 0 auto;
+    }
+
     h1 {
-      margin: 10px;
+      margin: 15px;
     }
 
     h2 {
       text-align: left;
-      margin-left: 75px;
+      margin-left: 85px;
     }
 
     .header-image {
@@ -37,22 +42,21 @@
 
     #lgulist {
       margin: 0 auto;
-      /* width: 80%; */
     }
+
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1><img src="header-image.png" class="header-image"/>Philippine Government Officials Database V2</h1>
+    <h1><img src="header-image.png" class="header-image"/>Philippine Government Officials Database</h1>
     <h2>Data as of April 2023</h2>
-    <br>
     <br>
     <br>
     </div>
     <br>
     <br>
-    <table id="lgulist" class="display" style="width: 100%" >
+    <table id="lgulist" class="table is-striped is-hoverable" style="width: 100%" >
       <thead>
         <tr>
           <th>Region</th>
@@ -72,7 +76,7 @@
       $.getJSON('lgu.json', function(data) {
         var table = $('#lgulist').DataTable({
           "data": data,
-          "pageLength": 20,
+          "pageLength": 25,
           autofill: true,
           "columns": [
             { "data": "region" },
@@ -82,23 +86,16 @@
             { "data": "position" },
             { "data": "name" },
             { "data": "contact" },
-            
-          ],
-          autoWidth: false,
-          // columnDefs: [
-          //     {
-          //         targets: ['_all'],
-          //         className: 'dt-center',
-          //     },
-          // ],
+            { "data": "location", visible: false, searchable: false }
+          ]
 
         });
-
+        
         // Add a search box for each column
         $('#lgulist thead tr').clone(true).appendTo('#lgulist thead');
         $('#lgulist thead tr:eq(1) th').each(function(i) {
           var title = $(this).text();
-          $(this).html('<input type="text" placeholder="Search ' + title + '" data-orderable="false"/>');
+          $(this).html('<input type="text" placeholder="Search ' + title + '" />');
 
           $('input', this).on('keyup change', function() {
             if (table.column(i).search() !== this.value) {
