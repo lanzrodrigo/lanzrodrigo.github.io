@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Philippine Geopolitical Database</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    #search-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    label {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      width: 300px;
+    }
+    #search-button {
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+    #search-button:hover {
+      background-color: #555;
+    }
+    #results {
+      margin-top: 50px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Philippine Geopolitical Database</h1>
+    <header class="mas">
+      <div class="container h-100 align-items-center">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mx-auto">
+              <br>
+              <br>
+              <br>
+              <h1 class=>Philippine Government Officials Directory</h1>
+              <h2 class=>Enter the name of a barangay to see respective government officials.</h2>
+                <div class="input-group input-group-newsletter">
+  
+                  <input class="form-control" id="user-input" placeholder="Enter barangay..."
+                    aria-label="Enter email..." aria-describedby="submit-button">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="boton input-group-append" id="boton">
+                    <button class="boton btn btn-secondary" type="button" id="button">Search Directory</button>
+                  </div>
+                </div>
+              </form>
+  
+              <p class="noresults">
+              </p>
+              <p class="noresults2">It might take a few seconds to load the database for your first search (depending on your internet connection)
+              </p>
+  
+              <table class="table" cellpadding="10">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Region</th>
+                    <th scope="col">Province</th>
+                    <th scope="col">City</th>
+  
+                  </tr>
+                </thead>
+                <tbody>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+  
+  
+      </div>
+  </header>
+  <div id="search-form">
+    <label for="barangay-search">Search Barangay:</label>
+    <input type="text" id="barangay-search" placeholder="Type here...">
+    <button id="search-button">Search</button>
+  </div>
+  <div id="results"></div>
+  <script src="app.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</body>
+</html>

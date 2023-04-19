@@ -1,0 +1,211 @@
+﻿num,region,province,city,barangay,position,name,email,telno
+1,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),Sangguniang Barangay Member,Jerry Bassingan Baging,,none
+2,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),Sangguniang Barangay Member,Freddie Ravelo Tabangin,,none
+3,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),Sangguniang Barangay Member,Paul P Angayen,,none
+4,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),Sangguniang Barangay Member,Ambrosio T Padilla,,0
+5,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),Sangguniang Barangay Member,Rodrigo U Llama,,none
+6,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),SK Chairperson,Jesther A Tarnate,tarnatejesther@gmail.com,none
+7,REGION 1,ILOCOS NORTE,ADAMS,Adams (Pob.),Barangay Secretary,Gladys C Dongaso,,none
+8,REGION 1,PANGASINAN,AGNO,Allabon,Punong Barangay,Kennedy Caboteja Carbon,omm.agno@rocketmail.com,0000-000-0000
+9,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,Reynaldo Ramirez Nomil,,0000-000-0000
+10,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,William Narciso Nacin,omm.agno@rocketmail.com,0000-000-0000
+11,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,Elmer Cabais Carbon,omm.agno@rocketmail.com,0000-000-0000
+12,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,Porferio Ramirez Nacin,omm.agno@rocketmail.com,0000-000-0000
+13,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,Diosdado Andrada Caboteja,omm.agno@rocketmail.com,0000-000-0000
+14,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,Saty Salvatierra Carbon,omm.agno@rocketmail.com,0000-000-0000
+15,REGION 1,PANGASINAN,AGNO,Allabon,Sangguniang Barangay Member,Ernesto Necesito Valenzuela,,0000-000-0000
+16,REGION 1,PANGASINAN,AGNO,Allabon,Barangay Secretary,Florencio Barcena Damasco,omm.agno@rocketmail.com,0000-000-0000
+17,REGION 1,PANGASINAN,AGNO,Aloleng,Punong Barangay,Fernando Garcia Batalla,omm.agno@rocketmail.com,0000-000-0000
+18,REGION 1,PANGASINAN,AGNO,Aloleng,Sangguniang Barangay Member,Dindo Lim Oquin,,0000-000-0000
+19,REGION 1,PANGASINAN,AGNO,Aloleng,Sangguniang Barangay Member,Clemente Cantillo Nituma,,0000-000-0000
+20,REGION 1,PANGASINAN,AGNO,Aloleng,Sangguniang Barangay Member,Jenalyn Nanao Navida,,0000-000-0000
+21,REGION 1,PANGASINAN,AGNO,Aloleng,Sangguniang Barangay Member,Amparo Ragojos Garcia,,0000-000-0000
+22,REGION 1,PANGASINAN,AGNO,Aloleng,Sangguniang Barangay Member,Jesus Abaya Nievera,,0000-000-0000
+23,REGION 1,PANGASINAN,AGNO,Aloleng,Sangguniang Barangay Member,Dexter Tandoc Naranja,,0000-000-0000
+24,REGION 1,PANGASINAN,AGNO,Aloleng,SK Chairperson,Carolyn Batalla Bajado,,0000-000-0000
+25,REGION 1,PANGASINAN,AGNO,Aloleng,Barangay Secretary,Meribeth Oracion Garcia,,0000-000-0000
+26,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Punong Barangay,Richard Rosete Salvador,omm.agno@rocketmail.com,0000-000-0000
+27,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Julita Penor Paz,,0000-000-0000
+28,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Rundie Constantino Raquipiso,,0000-000-0000
+29,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Clyde Napoles Nafarrete,,0000-000-0000
+30,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Rafael Eugenio Casiano,,0000-000-0000
+31,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Abelardo De Guzman Natata,,0000-000-0000
+32,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Relando Noguera Ningala,,0000-000-0000
+33,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Sangguniang Barangay Member,Noel Paz De Guzman,,0000-000-0000
+34,REGION 1,PANGASINAN,AGNO,Bangan-Oda,Barangay Secretary,John Mark Sagun Salvador,,0000-000-0000
+35,REGION 1,PANGASINAN,AGNO,Baruan,Punong Barangay,Reynold Damasco Cabanilla,omm.agno@rocketmail.com,0000-000-0000
+36,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Arlie Nerpio Naranja,,0000-000-0000
+37,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Noli Barcena Pilon,,0000-000-0000
+38,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Gerry Valenzuela Lastimosa,,0000-000-0000
+39,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Lailane Nerpio Neypes,,0000-000-0000
+40,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Albert Fabregas Billon,,0000-000-0000
+41,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Romulo Damasco Cabanilla,,0000-000-0000
+42,REGION 1,PANGASINAN,AGNO,Baruan,Sangguniang Barangay Member,Jeny Lastimosa Ramirez,,0000-000-0000
+43,REGION 1,PANGASINAN,AGNO,Baruan,SK Chairperson,Ryan Dave Garcia Naboa,,0000-000-0000
+44,REGION 1,PANGASINAN,AGNO,Baruan,Barangay Secretary,Analyn Doctor Sagun,,0000-000-0000
+45,REGION 1,PANGASINAN,AGNO,Boboy,Punong Barangay,Percival Cabatan Quinan,,0000-000-0000
+46,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Leovigildo Ritarita Quinan,,0000-000-0000
+47,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Richy Garcia Batara,,0000-000-0000
+48,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Matias Notarte Laulita,,0000-000-0000
+49,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Agel Mae Nodesca Nery,,0000-000-0000
+50,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Leonardo Balois Fe Benito,,0000-000-0000
+51,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Porferio Nieto Sumintac,,0000-000-0000
+52,REGION 1,PANGASINAN,AGNO,Boboy,Sangguniang Barangay Member,Rafilo Quinan Ramos,,0000-000-0000
+53,REGION 1,PANGASINAN,AGNO,Boboy,SK Chairperson,John Niko Neypes Siobal,,0000-000-0000
+54,REGION 1,PANGASINAN,AGNO,Boboy,Barangay Secretary,Marcelo Nabor Laulita,,0000-000-0000
+55,REGION 1,PANGASINAN,AGNO,Cayungnan,Punong Barangay,Richard Barroga Colobong,omm.agno@rocketmail.com,0000-000-0000
+56,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,Ronie Naraval Nano,,0000-000-0000
+57,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,Myrna Cabeje De Vera,,0000-000-0000
+58,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,Joseph Nilo Notarte,,0000-000-0000
+59,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,Josie Nilo Natino,,0000-000-0000
+60,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,Frederick Naraval Rosete,,0000-000-0000
+61,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,  ,,
+62,REGION 1,PANGASINAN,AGNO,Cayungnan,Sangguniang Barangay Member,Robert Corpuz Nilo,,None
+63,REGION 1,PANGASINAN,AGNO,Cayungnan,SK Chairperson,Cherry Mae Nilo Natino,,None
+64,REGION 1,PANGASINAN,AGNO,Cayungnan,Barangay Secretary,Jayson Caballes Novelero,Thenovelist13@gmail.com,None
+65,REGION 1,PANGASINAN,AGNO,Dangley,Punong Barangay,Joly Nario Navida,omm.agno@rocketmail.com,0000-000-0000
+66,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Leonard Jep Nario Dumlao,,0000-000-0000
+67,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Julius Buya Navidad,,0000-000-0000
+68,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Mark Antony Telba Nario,,0000-000-0000
+69,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Robert Nario Navida,,9206707615
+70,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Rene Del Rosario Apostol,,0000-000-0000
+71,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Rogelio Nayan Laderas,,0000-000-0000
+72,REGION 1,PANGASINAN,AGNO,Dangley,Sangguniang Barangay Member,Mary Joy Torres Nilo,jiggenloup@gmail.com,0000-000-0000
+73,REGION 1,PANGASINAN,AGNO,Dangley,SK Chairperson,Jhon Lester Nomil Navidad,jl_navidad014@yahoo.com,0000-000-0000
+74,REGION 1,PANGASINAN,AGNO,Dangley,Barangay Secretary,Ferry Nonat Caducio,,0000-000-0000
+75,REGION 1,PANGASINAN,AGNO,Gayusan,Punong Barangay,Neil Lomo De Guzman,zugedien@yahoo.com,0000-000-0000
+76,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Ramil Nivera Doctor,,0000-000-0000
+77,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Recto Naranja Notario,,0000-000-0000
+78,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Mike Naranja Notario,,0000-000-0000
+79,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Josephine Padua Nagal,,0000-000-0000
+80,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Jimmy Nerpio Cabais,,0000-000-0000
+81,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Art Naranja Naboa,,0000-000-0000
+82,REGION 1,PANGASINAN,AGNO,Gayusan,Sangguniang Barangay Member,Israel Nivera Nomil,,0000-000-0000
+83,REGION 1,PANGASINAN,AGNO,Gayusan,Barangay Secretary,Guia Correa Notar,,9652750500
+84,REGION 1,PANGASINAN,AGNO,Macaboboni,Punong Barangay,Ernie Batalla Esparaguerra,,0000-000-0000
+85,REGION 1,PANGASINAN,AGNO,Macaboboni,Sangguniang Barangay Member,Eleuterio Nator Gonzales,,0000-000-0000
+86,REGION 1,PANGASINAN,AGNO,Macaboboni,Sangguniang Barangay Member,Wilfredo Batalla Nilo,,0000-000-0000
+87,REGION 1,PANGASINAN,AGNO,Macaboboni,Sangguniang Barangay Member,Danilo Nevado Corpuz,,0000-000-0000
+88,REGION 1,PANGASINAN,AGNO,Macaboboni,Sangguniang Barangay Member,Lourdes Corpuz Braganaza,,0000-000-0000
+89,REGION 1,PANGASINAN,AGNO,Macaboboni,Sangguniang Barangay Member,Ardie Laurente Bundal,,0000-000-0000
+90,REGION 1,PANGASINAN,AGNO,Macaboboni,Sangguniang Barangay Member,Gilbert Notar Padua,,0000-000-0000
+91,REGION 1,PANGASINAN,AGNO,Macaboboni,SK Chairperson,JHONESSA JONES R BARANDOC,,0000-000-0000
+92,REGION 1,PANGASINAN,AGNO,Macaboboni,Barangay Secretary,Mardy Rivera Batalla,,0000-000-0000
+93,REGION 1,PANGASINAN,AGNO,Magsaysay,Punong Barangay,Ofelia Nagal Nonga,omm.agno@rocketmail.com,0000-000-0000
+94,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Felipe Cantillo Caducio,,0000-000-0000
+95,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Arnel Baluis Navida,,0000-000-0000
+96,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Alex Josep Narvaza,,0000-000-0000
+97,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Robert Cantillo Nieto,,0000-000-0000
+98,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Alexander Laderas Pacpaco,,0000-000-0000
+99,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Danilo Casiano Bonsato,,0000-000-0000
+100,REGION 1,PANGASINAN,AGNO,Magsaysay,Sangguniang Barangay Member,Quirico Nario Carbonell,,0000-000-0000
+101,REGION 1,PANGASINAN,AGNO,Magsaysay,SK Chairperson,Jessa Marie Nieto Ventura,,0000-000-0000
+102,REGION 1,PANGASINAN,AGNO,Magsaysay,Barangay Secretary,Albert Nario Bonsato,,None
+103,REGION 1,PANGASINAN,AGNO,Namatucan,Punong Barangay,Ailyn Navaluna Bongar,,0000-000-0000
+104,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Diosdado Calpo Navaluna,,0000-000-0000
+105,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Gerald Ubalde Torio,,0000-000-0000
+106,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Arnel Novero Bongar,,0000-000-0000
+107,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Leo Esposo Laderas,,0000-000-0000
+108,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Harry Nadera Miraflor,,0000-000-0000
+109,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Jeniefer Romero Navaluna,,0000-000-0000
+110,REGION 1,PANGASINAN,AGNO,Namatucan,Sangguniang Barangay Member,Jolly Pacpaco Nagal,,0000-000-0000
+111,REGION 1,PANGASINAN,AGNO,Namatucan,Barangay Secretary,Ricky Lastimosa Notario,,0000-000-0000
+112,REGION 1,PANGASINAN,AGNO,Patar,Punong Barangay,Rodrigo Natino Calpo,,None
+113,REGION 1,PANGASINAN,AGNO,Patar,Sangguniang Barangay Member,Marlo Noguera Nilo,,0000-000-0000
+114,REGION 1,PANGASINAN,AGNO,Patar,Sangguniang Barangay Member,Fidel Acierto Dulay,,0000-000-0000
+115,REGION 1,PANGASINAN,AGNO,Patar,Sangguniang Barangay Member,Wilfredo  Natino Calpo,,0000-000-0000
+116,REGION 1,PANGASINAN,AGNO,Patar,Sangguniang Barangay Member,Alex Notarte Doctor,,0000-000-0000
+117,REGION 1,PANGASINAN,AGNO,Patar,Sangguniang Barangay Member,Jessica Ebon Nicanor,,0000-000-0000
+118,REGION 1,PANGASINAN,AGNO,Patar,Sangguniang Barangay Member,Marissa Fernandez Nilo,,0000-000-0000
+119,REGION 1,PANGASINAN,AGNO,Patar,SK Chairperson,Arvhey Dela Rosa Calixtro,,9214602666
+120,REGION 1,PANGASINAN,AGNO,Patar,Barangay Secretary,Michelle Rose Jogno Adriano,chelaiadriano23@gmail.com,9365334075
+121,REGION 1,PANGASINAN,AGNO,Poblacion East,Punong Barangay,Rodel Fernandez Nagal,,9478644094
+122,REGION 1,PANGASINAN,AGNO,Poblacion East,Sangguniang Barangay Member,Annabelle Nerona Arce,,9567061586
+123,REGION 1,PANGASINAN,AGNO,Poblacion East,Sangguniang Barangay Member,Virginia De Guzman Natino,,9567061586
+124,REGION 1,PANGASINAN,AGNO,Poblacion East,Sangguniang Barangay Member,Crisanta Tarectecan Pecson,,9567061586
+125,REGION 1,PANGASINAN,AGNO,Poblacion East,Sangguniang Barangay Member,Percival Primo Ningala,,9567061586
+126,REGION 1,PANGASINAN,AGNO,Poblacion East,Sangguniang Barangay Member,Raul Orilla Arquero,,None
+127,REGION 1,PANGASINAN,AGNO,Poblacion East,Sangguniang Barangay Member,Albert Van Urbano De Guzman,babetdeguzman51@gmail.com,None
+128,REGION 1,PANGASINAN,AGNO,Poblacion East,SK Chairperson,Klint Asther Eugenio Rosete,,9567061586
+129,REGION 1,PANGASINAN,AGNO,Poblacion East,Barangay Secretary,Maria Vida Natino Aliga,,9567061586
+130,REGION 1,PANGASINAN,AGNO,Poblacion West,Punong Barangay,Randolph Nicanor Rosete,omm.agno@rocketmail.com,0000-000-0000
+131,REGION 1,PANGASINAN,AGNO,Poblacion West,Sangguniang Barangay Member,Baby Samuel Ignacio Narabal,,0000-000-0000
+132,REGION 1,PANGASINAN,AGNO,Poblacion West,Sangguniang Barangay Member,Ariel Casiano Nerona,,0000-000-0000
+133,REGION 1,PANGASINAN,AGNO,Poblacion West,Sangguniang Barangay Member,Francisco Nator La Guardia,,0000-000-0000
+134,REGION 1,PANGASINAN,AGNO,Poblacion West,Sangguniang Barangay Member,Teodorico Nacional Miam,,0000-000-0000
+135,REGION 1,PANGASINAN,AGNO,Poblacion West,Sangguniang Barangay Member,Hannibal Sanidad Gonzales,,0000-000-0000
+136,REGION 1,PANGASINAN,AGNO,Poblacion West,Sangguniang Barangay Member,Dina Urbano Batan,,0000-000-0000
+137,REGION 1,PANGASINAN,AGNO,Poblacion West,SK Chairperson,Bianca Faye Neypes Velasquez,,0000-000-0000
+138,REGION 1,PANGASINAN,AGNO,San Juan,Punong Barangay,George Dela Rosa Braga,georgebraga0107@gmail.com,9275430149
+139,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,Ricardo Orara Damaso,,0000-000-0000
+140,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,Dario Cambe Pilon,,0000-000-0000
+141,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,Edwin Peralta Pilon,,0000-000-0000
+142,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,Jerry Santiago Dela Rosa,,0000-000-0000
+143,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,Susana Obillo Garcia,,0000-000-0000
+144,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,Hilario Neypes Bauzon,,0000-000-0000
+145,REGION 1,PANGASINAN,AGNO,San Juan,Sangguniang Barangay Member,  ,,
+146,REGION 1,PANGASINAN,AGNO,San Juan,Barangay Secretary,Melanie Rosete NiÃ±o,,0000-000-0000
+147,REGION 1,PANGASINAN,AGNO,Tupa,Punong Barangay,Vic Notario Padama,omm.agno@rocketmail.com,0000-000-0000
+148,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Eleno Nilo Cave,,0000-000-0000
+149,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Norlyn Cantillo Gavina,,0000-000-0000
+150,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Roger Cantillo Nacor,,0000-000-0000
+151,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Darmo Noguera Nerpio,,0000-000-0000
+152,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Oliver Nario Naboa,,0000-000-0000
+153,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Jaime Escobidal Noguera,,0000-000-0000
+154,REGION 1,PANGASINAN,AGNO,Tupa,Sangguniang Barangay Member,Jomar Espejo Vinarao,,0000-000-0000
+155,REGION 1,PANGASINAN,AGNO,Tupa,SK Chairperson,Nerie John Pacpaco Cabanilla,,0000-000-0000
+156,REGION 1,PANGASINAN,AGNO,Tupa,Barangay Secretary,Zenia Nario Espinosa,,0000-000-0000
+157,REGION 1,PANGASINAN,AGNO,Viga,Punong Barangay,Romulo Novero Fabrigas,omm.agno@rocketmail.com,0000-000-0000
+158,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Leo Bagorio EspaÃ±ol,,0000-000-0000
+159,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Arthur Nomar Barandoc,,0000-000-0000
+160,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Romel Gamboa Necesito,,0000-000-0000
+161,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Vic Nieto Paras,,0000-000-0000
+162,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Mark Norwell Nilo Nacino,,0000-000-0000
+163,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Willie Calixtro Nazareno,,0000-000-0000
+164,REGION 1,PANGASINAN,AGNO,Viga,Sangguniang Barangay Member,Jenny Rose Sagun Canaria,,0000-000-0000
+165,REGION 1,PANGASINAN,AGNO,Viga,SK Chairperson, Bryan James Saclayan Necesito,,0000-000-0000
+166,REGION 1,PANGASINAN,AGNO,Viga,Barangay Secretary,Judelyn Taganap Peralta,,0000-000-0000
+167,REGION 1,LA UNION,AGOO,Ambitacay,Punong Barangay,PAQUITO BOADO LOPEZ,paquitolopez17@gmail.com,NONE
+168,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,ESTELA CARDONA ABANDO,angelvasadre@yahoo.com,NONE
+169,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,RAFAEL TABOG FANIA,angelvasadre@yahoo.com,NONE
+170,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,EDNA NIÃ‘ALGA ABANDO,angelvasadre@yahoo.com,NONE
+171,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,JUANITO PADUA BOADO,angelvasadre@yahoo.com,NONE
+172,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,IRENIO VASADRE VASADRE,angelvasadre@yahoo.com,NONE
+173,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,ATILINO NIÃ‘ALGA VILLANUEVA,angelvasadre@yahoo.com,NONE
+174,REGION 1,LA UNION,AGOO,Ambitacay,Sangguniang Barangay Member,JOEY ABANDO BOADO,angelvasadre@yahoo.com,NONE
+175,REGION 1,LA UNION,AGOO,Ambitacay,SK Chairperson,ANGEL GARCIA VASADRE,,NONE
+176,REGION 1,LA UNION,AGOO,Ambitacay,Barangay Secretary,MINDA GARCIA VASADRE,angelvasadre@yahoo.com,NONE
+177,REGION 1,LA UNION,AGOO,Balawarte,Punong Barangay,DANILO AHEGA FONTANILLA,angelvasadre@yahoo.com,NONE
+178,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,JOSE FONTANILLA VALLEJO,doctolerodanillene@gmail.com,NONE
+179,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,FELIPE VELASCO FONTANILLA,doctolerodanillene@gmail.com,NONE
+180,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,DOMINGA CARRERA VALLEJO,doctolerodanillene@gmail.com,NONE
+181,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,MONICO VALDEZ FONTANILLA,doctolerodanillene@gmail.com,NONE
+182,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,ORLANDO CARRERA LOPEZ,doctolerodanillene@gmail.com,NONE
+183,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,JESSIE JESUS LAZO FONTANILLA,doctolerodanillene@gmail.com,NONE
+184,REGION 1,LA UNION,AGOO,Balawarte,Sangguniang Barangay Member,DOLORES ASPILLAGA FONTANILLA,doctolerodanillene@gmail.com,NONE
+185,REGION 1,LA UNION,AGOO,Balawarte,SK Chairperson,JOMAR CARRERA MARATA,,NONE
+186,REGION 1,LA UNION,AGOO,Balawarte,Barangay Secretary,ROLANDO BOADILLA CARRERA,doctolerodanillene@gmail.com,NONE
+187,REGION 1,LA UNION,AGOO,Capas,Punong Barangay,DANILO BOADO VILLANUEVA,helenarongat@gmail.com,NONE
+188,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,IMELDA RAMOS ESTOLAS,helenarongat@gmail.com,NONE
+189,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,MODESTO LACHICA DANAO,helenarongat@gmail.com,NONE
+190,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,REGILDA GALERA BOADO,helenarongat@gmail.com,NONE
+191,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,MARLON GALERA MARAMBA,CAPASAGOOLU@GMAIL.COM,NONE
+192,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,EDELIA DULATRE ESTELLORO,helenarongat@gmail.com,NONE
+193,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,RENANTE LACHICA GALERA,CAPASAGOOLU@GMAIL.COM,NONE
+194,REGION 1,LA UNION,AGOO,Capas,Sangguniang Barangay Member,ALLAN BOADO MACADAEG,,NONE
+195,REGION 1,LA UNION,AGOO,Capas,SK Chairperson,MARK GLEN  GALERA MARAMBA,,NONE
+196,REGION 1,LA UNION,AGOO,Capas,Barangay Secretary,HELEN BOADO ARONGAT,helenarongat@gmail.com,NONE
+197,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Punong Barangay,REYNALDO ORIBELLO SELIN,adoraalamba@yahoo.com,206-27-88
+198,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,MARIO VALLEJO MANZANO,adoraalamba@yahoo.com,206-27-88
+199,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,NITA DULAY PAJARILLO,cindyallison612@yahoo.com,206-77-88
+200,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,MANUEL ASPIRAS PADILLA,padillamanuel294@gmail.com,206-27-88
+201,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,MARIETA  DE CASTRO ALBAN,marietaalban@gmail.com,206-27-88
+202,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,IMELDA SALAGAN ALBAY,julianaandreafontanilla@gmail.com,206-27-88
+203,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,HENRY AGUILAR MANONGDO,henrymanongdo04@gmail.com,206-27-88
+204,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Sangguniang Barangay Member,LETICIA EGUILOS PALMA,letpalma89@gmail.com,206-27-88
+205,REGION 1,LA UNION,AGOO,Consolacion (Pob.),SK Chairperson,ALVIN RIVERA BOADO,boadoalvin1108@gmail.com,206-27-88
+206,REGION 1,LA UNION,AGOO,Consolacion (Pob.),Barangay Secretary,JAQUELINE TIMA-ANG ROMBINES,,9224818673
+207,REGION 1,LA UNION,AGOO,Macalva Central,Punong Barangay,NARCISO PANELO LLAVORE,adoraalamba@yahoo.com,NONE
+208,REGION 1,LA UNION,AGOO,Macalva Central,Sangguniang Barangay Member,NELSON LLAVORE PANELO,PANELONELSONO@gmail.com,NONE
+209,REGION 1,LA UNION,AGOO,Macalva Central,Sangguniang Barangay Member,MARINA LLAVORE RIVERA,adoraalamba@yahoo.com,NONE
+210,REGION 1,LA UNION,AGOO,Macalva Central,Sangguniang Barangay Member,LILIA DALAO LLAVORE,adoraalamba@yahoo.com,NONE
