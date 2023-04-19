@@ -1,4 +1,4 @@
-d3.csv("http://localhost:8000/brgy.csv").then(function (data) {
+d3.csv("brgy.csv").then(function (data) {
   // console.log(data);
 
   var brgy = data;
