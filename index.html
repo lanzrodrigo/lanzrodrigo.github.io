@@ -1,55 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Philippine Government Officials Database</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-        #header {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Philippine Government Officials Database</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #header {
+      background-color: #f2f2f2;
+      padding: 30px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    #lgulist {
+      margin: 30px;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="header">Philippine Government Officials Database</div>
-    <table id="lgulist">
-        <thead>
-            <tr>
-                <th>Region</th>
-                <th>Province</th>
-                <th>City/Municipality</th>
-                <th>Barangay</th>
-                <th>Position</th>
-                <th>Name</th>
-                <th>Contact</th>
-            </tr>
-        </thead>
-    </table>
-    <script>
-        $(document).ready(function() {
-            $('#lgulist').DataTable({
-                "ajax": "lgu_list.txt",
-                "delimiter": "\t",
-                "columns": [
-                    { "data": "region" },
-                    { "data": "province" },
-                    { "data": "citymun" },
-                    { "data": "barangay" },
-                    { "data": "position" },
-                    { "data": "name" },
-                    { "data": "contact" }
-                ]
-            });
-        });
-    </script>
+  <div id="header">
+    Philippine Government Officials Database
+  </div>
+
+  <table id="lgulist" class="display">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Province</th>
+        <th>City/Municipality</th>
+        <th>Barangay</th>
+        <th>Position</th>
+        <th>Name</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var table = $('#lgulist').DataTable({
+        "ajax": {
+          "url": "lgu_list.txt",
+          "dataSrc": ""
+        },
+        "columns": [
+          { "data": "Region" },
+          { "data": "Province" },
+          { "data": "City/Municipality" },
+          { "data": "Barangay" },
+          { "data": "Position" },
+          { "data": "Name" },
+          { "data": "Contact" }
+        ]
+      });
+      
+      // check if DataTable is already initialized before initializing it again
+      if (!$.fn.DataTable.isDataTable('#lgulist')) {
+        table = $('#lgulist').DataTable();
+      }
+    });
+  </script>
 </body>
+
 </html>
