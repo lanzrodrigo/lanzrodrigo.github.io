@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Philippine Government Officials Database</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Philippine Government Officials Database</h1>
+    <table id="lgulist" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Province</th>
+          <th>City/Municipality</th>
+          <th>Barangay</th>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $.getJSON('lgu.json', function(data) {
+        $('#lgulist').DataTable({
+          "data": data,
+          "columns": [
+            { "data": "region" },
+            { "data": "province" },
+            { "data": "citymun" },
+            { "data": "barangay" },
+            { "data": "position" },
+            { "data": "name" },
+            { "data": "contact" }
+          ]
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
