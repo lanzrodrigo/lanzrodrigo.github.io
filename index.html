@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Philippine Government Officials Database</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
     }
 
     .container {
@@ -52,9 +54,11 @@
       margin-left: 0.5em;
       display: inline-block;
       width: auto;
+      font-size: 12px;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Philippine Government Officials Database</h1>
@@ -73,12 +77,10 @@
     </table>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
   <script>
     $(document).ready(function() {
       $.getJSON('lgu.json', function(data) {
-        $('#lgulist').DataTable({
+        var table = $('#lgulist').DataTable({
           "data": data,
           "columns": [
             { "data": "region" },
@@ -88,34 +90,21 @@
             { "data": "position" },
             { "data": "name" },
             { "data": "contact" }
-          ],
-          "initComplete": function () {
-            this.api().columns().every(function () {
-              var column = this;
-              var select = $('<select><option value=""></option></select>')
-                .appendTo($(column.header()).empty())
-                .on('change', function () {
-                  var val = $.fn.dataTable.util.escapeRegex(
-                    $(this).val()
-                  );
+          ]
+        });
 
-                  column
-                    .search(val ? '^' + val + '$' : '', true, false)
-                    .draw();
-                });
-
-
-                column
-              .data()
-              .unique()
-              .sort()
-              .each(function(d, j) {
-                select.append(
-                  '<option value="' + d + '">' + d + '</option>'
-                );
-              });
+        // Add a search box for each column
+        $('#lgulist thead tr').clone(true).appendTo('#lgulist thead');
+        $('#lgulist thead tr:eq(1) th').each(function(i) {
+          var title = $(this).text();
+          $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+     
+          $('input', this).on('keyup change', function() {
+            if (table.column(i).search() !== this.value) {
+              table.column(i).search(this.value).draw();
+            }
           });
-        }
+        });
       });
     });
   </script>
