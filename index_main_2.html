@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Philippine Government Officials Database</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    table.dataTable thead th,
+    table.dataTable thead td {
+      padding: 10px 18px;
+      border-bottom: 1px solid #111;
+      font-size: 14px;
+      color: #111;
+    }
+
+    table.dataTable tbody tr {
+      background-color: #fff;
+    }
+
+    table.dataTable tbody tr:nth-child(even) {
+      background-color: #f6f6f6;
+    }
+
+    table.dataTable tbody td {
+      padding: 10px 18px;
+      font-size: 14px;
+      color: #111;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">Philippine Government Officials Database</div>
+  <div class="container">
+    <table id="lgulist" class="display">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Province</th>
+          <th>City/Municipality</th>
+          <th>Barangay</th>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#lgulist').DataTable({
+        "ajax": "lgu_list.csv",
+        "columns": [
+          { "data": "region" },
+          { "data": "province" },
+          { "data": "citymun" },
+          { "data": "barangay" },
+          { "data": "position" },
+          { "data": "name" },
+          { "data": "contact" }
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>
