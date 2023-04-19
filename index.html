@@ -36,7 +36,7 @@
     }
 
     #lgulist {
-      margin: auto;
+      margin: 0 auto;
       /* width: 80%; */
     }
   </style>
@@ -52,7 +52,7 @@
     </div>
     <br>
     <br>
-    <table id="lgulist" class="display" style="width: 100%;" >
+    <table id="lgulist" class="display" style="width: 100%" >
       <thead>
         <tr>
           <th>Region</th>
@@ -72,6 +72,8 @@
       $.getJSON('lgu.json', function(data) {
         var table = $('#lgulist').DataTable({
           "data": data,
+          "pageLength": 20,
+          autofill: true,
           "columns": [
             { "data": "region" },
             { "data": "province" },
