@@ -21,7 +21,7 @@
     }
 
     h1 {
-      text-align: center;
+      text-align: left;
     }
 
     .header-image {
@@ -66,15 +66,16 @@
           ]
         });
 
-        // Add a search box for each column
-        $('#lgulist thead tr').clone(true).appendTo('#lgulist thead');
-        $('#lgulist thead tr:eq(1) th').each(function(i) {
-          var title = $(this).text();
-          $(this).html('<input type="text" placeholder="Search ' + title + '" />');
-     
-          $('input', this).on('keyup change', function() {
-            if (table.column(i).search() !== this.value) {
-              table.column(i).search(this.value).draw();
+      // Add a search box for each column
+      $('#lgulist thead tr').clone(true).appendTo('#lgulist thead');
+      $('#lgulist thead tr:eq(1) th').each(function(i) {
+        var title = $(this).text();
+        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+        $(this).prop('sorting', false); // disable sorting
+      
+        $('input', this).on('keyup change', function() {
+          if (table.column(i).search() !== this.value) {
+            table.column(i).search(this.value).draw();
             }
           });
         });
