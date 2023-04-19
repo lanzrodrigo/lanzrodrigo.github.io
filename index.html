@@ -20,24 +20,26 @@
       font-family: 'Open Sans', sans-serif;
     }
 
-    div.container {
-      /* width: 70%; */
-      margin: 0 auto;
-    }
+    /* div.container {
+      width: 70%; */
+      /* margin: 0 auto;
+    } */
 
     h1 {
       margin: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 img {
+      height: 70px;
+      margin-right: 10px;
     }
 
     h2 {
-      text-align: left;
-      margin-left: 85px;
-    }
-
-    .header-image {
-      height: 70px;
-      margin-right: 10px;
-      float: left;
+      text-align: center;
+      /* margin-left: 85px; */
     }
 
     #lgulist {
@@ -81,12 +83,19 @@
           "columns": [
             { "data": "region" },
             { "data": "province" },
-            { "data": "citymun" },
+            { "data": "citymun"},
             { "data": "barangay" },
             { "data": "position" },
             { "data": "name" },
             { "data": "contact" },
-            { "data": "location", visible: false, searchable: false }
+            { "data": "location"}
+          ],
+          "columnDefs": [
+            {
+              target: 7,
+              visible: false,
+              searchable: true,
+            },
           ]
 
         });
