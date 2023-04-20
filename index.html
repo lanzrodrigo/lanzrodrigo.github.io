@@ -39,6 +39,7 @@
           margin-left: 10%;
           margin-right: 10%;
           margin: 0 auto;
+          position: relative;
         }
 
         #lgulist {
@@ -49,6 +50,15 @@
           width: 70px; /* Change this to adjust the width of the search bar */
           /* font-size: smaller; */
         }
+
+/* Attribution style */
+.attribution {
+  position: absolute;
+  bottom: -30px; /* Move the attribution up by the height of its container */
+  left: 50%; /* Center the attribution horizontally */
+  transform: translateX(-50%); /* Center the attribution horizontally */
+  font-size: small;
+}
     </style>
 </head>
 
@@ -85,16 +95,17 @@
         var table = $('#lgulist').DataTable({
           "data": data,
           "pageLength": 25,
+          fixedColumns:true,
           autofill: true,
           order: [[1,'asc']],
           "columns": [
           { "data": "region", "width": "13%" },
           { "data": "province", "width": "18%" },
-          { "data": "citymun", "width": "22%" },
+          { "data": "citymun", "width": "15%" },
           { "data": "barangay", "width": "16%" },
-          { "data": "position", "width": "16%" },
+          { "data": "position", "width": "20%" },
           { "data": "name", "width": "25%" },
-          { "data": "contact", "width": "10px" },
+          { "data": "contact", "width": "5%" },
           { "data": "location", "width": null}
         ],
           "columnDefs": [
@@ -139,11 +150,14 @@
   .smaller-text {
     /* font-size: small; */
     font-size: 100%;
-    width: 60%;
+    width: 85%;
   }
 </style>
-
-  
+<div class="attribution">
+  <br>
+  <p>Collaborated and developed by: <a href="https://ph.linkedin.com/in/jolanzrodrigo"title="Developer"target="_blank">JRodrigo</a> &middot; <a href="https://ph.linkedin.com/in/cezar-john-estrada-5a6a31105" title="Developer"target="_blank">CJEstrada</a> &middot; <a href="https://ph.linkedin.com/in/wyethsy" title="Consultant"target="_blank">WSy</a></p>
+<br>
+</div>
 
 
 
