@@ -5,14 +5,9 @@
   <meta charset="UTF-8">
   <title>Philippine Government Officials Database</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
   <link href="css/jquery.dataTables.min.css" rel="stylesheet"/>
   <link href="css/bulma.min.css" rel="stylesheet"/>
   <link href="css/dataTables.bulma.min.css" rel="stylesheet"/>
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="js/dataTables.bulma.min.js"></script>
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
@@ -34,10 +29,15 @@
       text-align: center;
     }
 
-    #lgulist {
+    .container {
+      margin-left: 20px;
+      margin-right: 20px;
       margin: 0 auto;
     }
 
+    #lgulist {
+      margin: 0 auto;
+    }
   </style>
 </head>
 
@@ -46,8 +46,6 @@
     <h1><img src="header-image.png" class="header-image"/>Philippine Government Officials Database</h1>
     <h2>Data as of April 2023</h2>
     <br>
-    <br>
-    </div>
     <br>
     <table id="lgulist" class="table is-striped is-hoverable" style="width: 100%" >
       <thead>
@@ -62,7 +60,12 @@
         </tr>
       </thead>
     </table>
+    <br>
   </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/dataTables.bulma.min.js"></script>
 
   <script>
     //Initialize datatables
