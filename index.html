@@ -84,14 +84,14 @@
           autofill: true,
           order: [[1,'asc']],
           "columns": [
-          { "data": "region", "width": "10%" },
+          { "data": "region", "width": "5%" },
           { "data": "province", "width": "10%" },
           { "data": "citymun", "width": "10%" },
           { "data": "barangay", "width": "10%" },
           { "data": "position", "width": "10%" },
           { "data": "name", "width": "20%" },
-          { "data": "contact", "width": "15%" },
-          { "data": "location", "width": "15%" }
+          { "data": "contact", "width": "10%" },
+          { "data": "location", "width": "0%" }
         ],
           "columnDefs": [
             {
@@ -123,9 +123,15 @@
               $(this).off('click');
             });
           }
+
         });
+                          // CSS to resize search bars per column
+                          $('.column-search').css('width', '50%');  
+        
       });
+      
     });
+    
   </script>
   
 
