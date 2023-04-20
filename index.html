@@ -40,6 +40,7 @@
           margin-right: 10%;
           margin: 0 auto;
           position: relative;
+          padding-bottom: 60px; /* add space for attribution */
         }
 
         #lgulist {
@@ -51,13 +52,23 @@
           /* font-size: smaller; */
         }
 
-/* Attribution style */
-.attribution {
-  position: absolute;
-  bottom: -30px; /* Move the attribution up by the height of its container */
-  left: 50%; /* Center the attribution horizontally */
-  transform: translateX(-50%); /* Center the attribution horizontally */
+        .attribution {
+          position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
   font-size: small;
+  padding: 1px;
+  background-color: #f8f8f8;
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.1);
+}
+.footer-text {
+  text-align: right; /* center the text horizontally */
 }
     </style>
 </head>
@@ -82,6 +93,13 @@
       </thead>
     </table>
     <br>
+  </div>
+
+  <div class="attribution">
+    <br>
+    <p style="white-space: pre-wrap;">Collaborated and developed by ARI MS: <a href="https://ph.linkedin.com/in/jolanzrodrigo" title="Developer" target="_blank">JRodrigo</a> &middot; <a href="https://ph.linkedin.com/in/cezar-john-estrada-5a6a31105" title="Developer" target="_blank">CJEstrada</a> &middot; <a href="https://ph.linkedin.com/in/wyethsy" title="Consultant" target="_blank">WSy</a></p>
+
+  <br>
   </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -153,11 +171,7 @@
     width: 85%;
   }
 </style>
-<div class="attribution">
-  <br>
-  <p>Collaborated and developed by: <a href="https://ph.linkedin.com/in/jolanzrodrigo"title="Developer"target="_blank">JRodrigo</a> &middot; <a href="https://ph.linkedin.com/in/cezar-john-estrada-5a6a31105" title="Developer"target="_blank">CJEstrada</a> &middot; <a href="https://ph.linkedin.com/in/wyethsy" title="Consultant"target="_blank">WSy</a></p>
-<br>
-</div>
+
 
 
 
