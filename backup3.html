@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Philippine Government Officials Database</title>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>Philippine Government Officials Directory</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet"/>
+    <link href="css/bulma.min.css" rel="stylesheet"/>
+    <link href="css/dataTables.bulma.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            margin: 0;
+        }
 
-  <link href="css/jquery.dataTables.min.css" rel="stylesheet"/>
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"/> -->
-  <link href="css/bulma.min.css" rel="stylesheet"/>
-  <link href="css/dataTables.bulma.min.css" rel="stylesheet"/>
+        h1 {
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-  <!-- <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
-  <script type="text/javascript" src="js/dataTables.bulma.min.js"></script>
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-    }
+        h1 img {
+            height: 70px;
+            margin-right: 10px;
+        }
 
-    /* div.container {
-      width: 70%; */
-      /* margin: 0 auto;
-    } */
+        h2 {
+            text-align: center;
+        }
 
-    h1 {
-      margin: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .container {
+          margin-left: 10%;
+          margin-right: 10%;
+          margin: 0 auto;
+        }
 
-    h1 img {
-      height: 70px;
-      margin-right: 10px;
-    }
-
-    h2 {
-      text-align: center;
-      /* margin-left: 85px; */
-    }
-
-    #lgulist {
-      margin: 0 auto;
-    }
-
-  </style>
+        #lgulist {
+            margin: 0 auto;
+            /* font-size: smaller; */
+        }
+        .search-bar {
+          width: 70px; /* Change this to adjust the width of the search bar */
+          font-size: smaller;
+        }
+    </style>
 </head>
 
 <body>
   <div class="container">
-    <h1><img src="header-image.png" class="header-image"/>Philippine Government Officials Database</h1>
+    <h1><img src="header-image.png" class="header-image"/>Philippine Government Officials Directory</h1>
     <h2>Data as of April 2023</h2>
-    <br>
-    <br>
-    </div>
     <br>
     <br>
     <table id="lgulist" class="table is-striped is-hoverable" style="width: 100%" >
@@ -71,54 +69,80 @@
         </tr>
       </thead>
     </table>
+    <br>
   </div>
 
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/dataTables.bulma.min.js"></script>
+
   <script>
+    //Initialize datatables
     $(document).ready(function() {
       $.getJSON('lgu.json', function(data) {
         var table = $('#lgulist').DataTable({
           "data": data,
           "pageLength": 25,
           autofill: true,
+          order: [[1,'asc']],
           "columns": [
-            { "data": "region" },
-            { "data": "province" },
-            { "data": "citymun"},
-            { "data": "barangay" },
-            { "data": "position" },
-            { "data": "name" },
-            { "data": "contact" },
-            { "data": "location"}
-          ],
+          { "data": "region", "width": "5%" },
+          { "data": "province", "width": "10%" },
+          { "data": "citymun", "width": "10%" },
+          { "data": "barangay", "width": "10%" },
+          { "data": "position", "width": "10%" },
+          { "data": "name", "width": "20%" },
+          { "data": "contact", "width": "10%" },
+          { "data": "location", "width": "0%" }
+        ],
           "columnDefs": [
             {
-              target: 7,
+              targets: [7],
               visible: false,
               searchable: true,
             },
-          ]
+          ],
+          "initComplete": function(settings, json) {
+            // Add a search box for each column
+            $('#lgulist thead tr').eq(0).clone().appendTo('#lgulist thead');
+            $('#lgulist thead tr:eq(1) th').each(function(i) {
+              var title = $(this).text();
+              $(this).html('<input type="text" placeholder="Search ' + title + '" class="smaller-text" />');
+  
+              $('input', this).on('keyup change', function() {
+                if (table.column(i).search() !== this.value) {
+                  table
+                    .column(i)
+                    .search(this.value)
+                    .draw();
+                }
+              });
+            });
+  
+            // Remove sorting functionality for the search boxes
+            $('#lgulist thead tr:eq(1) th').each(function(i) {
+              $(this).removeClass('sorting');
+              $(this).off('click');
+            });
+          }
 
         });
-        
-        // Add a search box for each column
-        $('#lgulist thead tr').clone(true).appendTo('#lgulist thead');
-        $('#lgulist thead tr:eq(1) th').each(function(i) {
-          var title = $(this).text();
-          $(this).html('<input type="text" placeholder="Search ' + title + '" />');
-
-          $('input', this).on('keyup change', function() {
-            if (table.column(i).search() !== this.value) {
-              table.column(i).search(this.value).draw();
-            }
-          });
-        });
-
-
-
-
+                          
       });
+      
     });
-  </script>
-</body>
+</script>
+<style>
+  /* CSS to resize search bars per column */
+  .smaller-text {
+    font-size: smaller;
+    width: 60%;
+  }
+</style>
 
+  
+
+
+
+</body>
 </html>
