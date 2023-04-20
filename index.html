@@ -42,6 +42,9 @@
         #lgulist {
             margin: 0 auto;
         }
+        .search-bar {
+          width: 70px; /* Change this to adjust the width of the search bar */
+        }
     </style>
 </head>
 
@@ -81,21 +84,21 @@
           autofill: true,
           order: [[1,'asc']],
           "columns": [
-            { "data": "region" },
-            { "data": "province" },
-            { "data": "citymun"},
-            { "data": "barangay" },
-            { "data": "position" },
-            { "data": "name" },
-            { "data": "contact" },
-            { "data": "location"}
-          ],
+          { "data": "region", "width": "10%" },
+          { "data": "province", "width": "10%" },
+          { "data": "citymun", "width": "10%" },
+          { "data": "barangay", "width": "10%" },
+          { "data": "position", "width": "10%" },
+          { "data": "name", "width": "20%" },
+          { "data": "contact", "width": "15%" },
+          { "data": "location", "width": "15%" }
+        ],
           "columnDefs": [
             {
               targets: [7],
               visible: false,
               searchable: true,
-            }
+            },
           ],
           "initComplete": function(settings, json) {
             // Add a search box for each column
