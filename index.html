@@ -7,6 +7,8 @@
     <link href="css/jquery.dataTables.min.css" rel="stylesheet"/>
     <link href="css/bulma.min.css" rel="stylesheet"/>
     <link href="css/dataTables.bulma.min.css" rel="stylesheet"/>
+
+    
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -111,7 +113,39 @@
   <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="js/dataTables.bulma.min.js"></script>
 
+      <!-- Script for disabling inspect view -->
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+
+
   <script>
+    document.onkeydown = (e) => {
+      if (e.key == 123) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key == 'S' || e.key == 's')) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && (e.key == 'U' || e.key == 'u')) {
+        e.preventDefault();
+      }
+      if (e.key === 'F12') {
+        return false;
+      }
+    };
+
+      
     //Initialize datatables
     $(document).ready(function() {
       $.getJSON('lgu.json', function(data) {
